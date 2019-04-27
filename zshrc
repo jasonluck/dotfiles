@@ -1,6 +1,6 @@
 ################  PowerLevel9k Configuration ###################
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
 POWERLEVEL9K_BATTERY_CHARGING='yellow'
