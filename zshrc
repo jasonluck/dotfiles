@@ -1,5 +1,4 @@
 ################  PowerLevel9k Configuration ###################
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
@@ -59,5 +58,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 # User configuration
