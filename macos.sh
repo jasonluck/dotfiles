@@ -43,3 +43,4 @@ code --install-extension hashicorp.terraform
 code --install-extension ms-azuretools.vscode-azureterraform
 code --install-extension eamodio.gitlens
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension golang.go
