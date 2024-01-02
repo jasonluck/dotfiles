@@ -15,8 +15,8 @@ brew install --cask docker
 # Terminal Tools and Shell config
 brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-brew tap sambadevi/powerlevel9k
-brew install powerlevel9k
+brew install powerlevel10k
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
