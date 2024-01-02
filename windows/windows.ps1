@@ -10,6 +10,9 @@ choco upgrade vault -y
 # Container Tools
 choco upgrade docker-cli -y
 
+# Neovim
+choco upgrade neovim -y
+
 # Kubernetes tools
 # microk8s - https://microk8s.io/
 
