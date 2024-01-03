@@ -1,6 +1,9 @@
 #! /bin/bash
 # Script to install development tools onto a MacOS machine
 
+# Put dotfiles into place
+cp -fr ./.* ~
+
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -16,7 +19,7 @@ brew install --cask docker
 brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 brew install powerlevel10k
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+#echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
@@ -28,10 +31,10 @@ pre-commit init-templatedir ~/.git-template
 # Go
 brew install golang
 mkdir -p $HOME/go/{bin,src,pkg}
-echo "# Configure Go Environment" >> ~/.zshrc
-echo 'export GOPATH=$HOME/go' >> ~/.zshrc
-echo 'export GOROOT=$(brew --prefix golang)/libexec' >> ~/.zshrc
-echo 'export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"' >> ~/.zshrc
+#echo "# Configure Go Environment" >> ~/.zshrc
+#echo 'export GOPATH=$HOME/go' >> ~/.zshrc
+#echo 'export GOROOT=$(brew --prefix golang)/libexec' >> ~/.zshrc
+#echo 'export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"' >> ~/.zshrc
 
 # Visual Studio Code
 brew install --cask visual-studio-code
@@ -44,3 +47,7 @@ code --install-extension ms-azuretools.vscode-azureterraform
 code --install-extension eamodio.gitlens
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension golang.go
+
+# NeoVim
+brew install neovim
+brew install rg
