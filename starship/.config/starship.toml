@@ -4,9 +4,8 @@ format = """
 [](surface0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
 $directory\
-[](fg:peach bg:green)\
+[](bg:surface0 fg:green)\
 $git_branch\
 $git_status\
 [](fg:green bg:teal)\
@@ -19,11 +18,9 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:teal bg:blue)\
+[](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
-$time\
-[ ](fg:purple)\
+[ ](fg:blue)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -71,6 +68,7 @@ crust = "#11111b"
 [os]
 disabled = false
 style = "bg:surface0 fg:text"
+format = '[$symbol ]($style)'
 
 [os.symbols]
 Windows = "󰍲"
@@ -94,13 +92,13 @@ Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
 [username]
-show_always = true
+show_always = false
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:text bg:surface0"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
