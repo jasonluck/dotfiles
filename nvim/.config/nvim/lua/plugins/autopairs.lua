@@ -7,10 +7,10 @@ return {
 
   --Tabout plugin to allow us to tab out of our autopaired brackets, quotes, ..
   -- This was conflicting with CoPilot, so disabling for now
-  -- {
-  -- 	"abecodes/tabout.nvim",
-  -- 	config = function()
-  -- 		require("tabout").setup()
-  -- 	end,
-  -- },
+  {
+  	"abecodes/tabout.nvim",
+  	config = function()
+  		require("tabout").setup()
+  	end,
+  },
 }
