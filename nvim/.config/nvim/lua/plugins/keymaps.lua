@@ -195,11 +195,20 @@ return {
 		wk.add({
 			{ "<leader>lo", "<cmd>Leet<CR>", desc = "Open Leetcode" },
 			{ "<leader>ld", "<cmd>Leet desc<CR>", desc = "Toggle Problem Description" },
-			{ "<leader>li", "<cmd>Leet info<CR>", desc = "Information on current problem" },
+			{
+				"<leader>li",
+				"<cmd>Leet info<CR>",
+				desc = "Information on current problem",
+			},
 			{ "<leader>lc", "<cmd>Leet console<CR>", desc = "Toggle Leetcode console" },
 			{ "<leader>lt", "<cmd>Leet tabs<CR>", desc = "Open questions" },
 			{ "<leader>lr", "<cmd>Leet run<CR>", desc = "LeetCode Run tests" },
 			{ "<leader>ls", "<cmd>Leet submit<CR>", desc = "LeetCode submit solution" },
+			{ "<leader>lla", "<cmd>Leet list status=notac<CR>", desc = "List problems - Attempted" },
+			{ "<leader>lls", "<cmd>Leet list status=ac<CR>", desc = "List problems - Solved" },
+			{ "<leader>lle", "<cmd>Leet list difficulty=easy status=todo<CR>", desc = "List problems - Easy" },
+			{ "<leader>llm", "<cmd>Leet list difficulty=medium status=todo<CR>", desc = "List problems - Medium" },
+			{ "<leader>llh", "<cmd>Leet list difficulty=hard status=todo<CR>", desc = "List problems - Hard" },
 		})
 	end,
 }
