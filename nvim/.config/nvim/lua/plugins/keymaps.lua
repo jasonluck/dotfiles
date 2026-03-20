@@ -201,6 +201,7 @@ return {
 				desc = "Information on current problem",
 			},
 			{ "<leader>lc", "<cmd>Leet console<CR>", desc = "Toggle Leetcode console" },
+			{ "<leader>lb", "<cmd>Leet open<CR>", desc = "Open problem in browser" },
 			{ "<leader>lt", "<cmd>Leet tabs<CR>", desc = "Open questions" },
 			{ "<leader>lr", "<cmd>Leet run<CR>", desc = "LeetCode Run tests" },
 			{ "<leader>ls", "<cmd>Leet submit<CR>", desc = "LeetCode submit solution" },

@@ -21,5 +21,8 @@ return {
 		-- configuration goes here
 		lang = "golang",
 		picker = "telescope",
+		editor = {
+			reset_previous_code = false,
+		},
 	},
 }
