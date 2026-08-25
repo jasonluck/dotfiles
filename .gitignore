@@ -1,1 +1,7 @@
 nvim/lazy-lock.json
+
+#cliamp
+cliamp/.config/cliamp/*.log
+cliamp/.config/cliamp/resume.json
+cliamp/.config/cliamp/*.pid
+cliamp/.config/cliamp/*.sock
